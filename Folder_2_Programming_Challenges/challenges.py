@@ -65,3 +65,26 @@ challenge_3_b("reverse order")
 
 
 ### Challenge 4
+### NTS: this can be refactored for sure.
+def challenge_4(temp,input,output):
+    if input == "C":
+        if output == "F":
+            return f"{(9*temp)/5 + 32} F"
+        elif output == "K":
+            return f"{temp + 273.15} K"
+        else:
+            return f"{temp} C"
+    elif input == "F":
+        if output == "C":
+            return f"{(5*(temp-32))/9} F"
+        elif output == "K":
+            return f"{(5*(temp-32))/9 + 273.15} K"
+        else:
+            return f"{temp} F"
+    elif input == "K":
+        if output == "C":
+            return f"{temp - 273.15} C"
+        elif output == "F":
+            return "{:.2f}".format(f"{(9*(temp-273.15))/5 + 32} F")
+        else:
+            return f"{temp} K"

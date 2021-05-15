@@ -29,8 +29,24 @@ challenge_1()
 
 
 ### Challenge 2
+### Currently has space and time complexity of O(n)
+
+import operator 
+
+def challenge_2(string):
+    dictionary = dict()
+    new_string = string.lower()
+    for x in new_string:
+        dictionary[x] = new_string.count(x)
+    return max(dictionary.items(), key=operator.itemgetter(1))[0]
 
 
+### using counter, which returns a dictionary with element as its key and number of occurrences as its value
+from collections import Counter
+
+def challenge_2(string):
+    answer = Counter(string)
+    return max(answer)
 
 ### Challenge 3 
 
@@ -88,3 +104,52 @@ def challenge_4(temp,input,output):
             return "{:.2f}".format(f"{(9*(temp-273.15))/5 + 32} F")
         else:
             return f"{temp} K"
+
+
+### Challenge 5
+
+def challenge_5():
+    pass
+
+
+
+### Challenge 6
+
+def challenge_6(given_list):
+    duplicate_list = given_list
+    temp_list = []
+    for x in given_list:
+        if x["name"] not in temp_list:
+            temp_list.append(x)
+            duplicate_list.pop(x)
+        else:
+            continue
+    return duplicate_list
+
+
+
+the_list = [
+                [
+                    {
+                        "name":"Bob", 
+                        "dob": "13/04/1970", 
+                        "nationality": "Australian"
+                    }
+                ],
+                [
+                    {
+                        "name":"Jane", 
+                        "dob": "13/04/1970", 
+                        "nationality": "Canadian"
+                    }
+                ],
+                [
+                    {
+                        "name":"Jane", 
+                        "dob": "13/04/1971", 
+                        "nationality": "French"
+                    }
+                ]
+            ]
+
+print(challenge_6(the_list))

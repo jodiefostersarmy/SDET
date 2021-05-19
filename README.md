@@ -15,7 +15,7 @@ The structure of this repo is set into two folders; the first is for the test ca
 
 - Folder 2 / Programming Challenges
     - challenges.py
-        - Each solution will contain docstrings to explain the purpose of the function and also the return data type.
+        - This file contains the answer to the programming challenges. Each solution will contain docstrings to explain the purpose of the function and also the return data type.
     - ch6_data.py
         - This contains a list of dictionary data that was used to complete challenge 6.
     - consume_api.py

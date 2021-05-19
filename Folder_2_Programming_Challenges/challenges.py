@@ -83,6 +83,9 @@ challenge_3_b("reverse order")
 ### Challenge 4
 ### NTS: this can be refactored for sure.
 def challenge_4(temp,input,output):
+    """takes in 3 arguments, one integer and 2 strings.
+    returns an f-string
+    """
     if input == "C":
         if output == "F":
             return f"{(9*temp)/5 + 32} F"

@@ -188,7 +188,9 @@ def challenge_6(given_list):
 
     print("The average age is: ", avgfloat)
     print("The people who have an age with less than 51 are: ", younger)
-    # 5 -- Unique countries
+    
+    
+    # 5 -- Unique countries                                     ---------- still needs work
 
     import requests
     import json

@@ -199,8 +199,14 @@ def challenge_6(given_list):
         raw_json = data_file.readline()
         countries = json.loads(raw_json)
 
-    # for x in given_list:
-    #     if x[0]["nationality"] not in temp_list:
+    for person in given_list:
+        for country in countries:
+            if country["demonym"] == person[0]['nationality']:
+                unique_countries.append(country["name"])
+            else:
+                pass
+
+    print(unique_countries)
 
     return "End of Testing"
 

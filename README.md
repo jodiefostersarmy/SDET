@@ -11,7 +11,7 @@ The structure of this repo is set into two folders; the first is for the test ca
 ### Walkthrough
 
 - Folder 1 / Automation Testing
-    - There will be code comments and docstrings to support test coverage for each feature tested.
+    - A list of tests that could be run for full coverage for a small e-commerce website.
 
 - Folder 2 / Programming Challenges
     - Each solution will contain docstrings to explain the purpose of the function and also the return data type.
